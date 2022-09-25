@@ -53,26 +53,26 @@
     
     <div class="footer-rectangle"></div>
 
-    <section class="body">
-      <div class="text-box">
-        <h2>
-          It just <strong>works.</strong>
-        </h2>
-        
-        <div class="all-in-one-solution">
-          <p class="solution">
-            “I really like how it is an all-in-one solution that handle many of 
-            the tasks that you would normally need separate tools to do the same 
-            job. This thing is a miracle worker.”
-          </p>
-        </div>
-        
-        <div class="sign-out">
-          <div class="CEO">JEREMY ROBINSON</div>
-          <div class="CMO">CMO, FYLO</div>
-        </div>
+    <div class="body">
+      <div class="box">
       </div>
-    </section>
+    </div>
+    
+    <h2>
+      It just <strong>works.</strong>
+    </h2>
+    <div class="all-in-one-solution">
+      <p class="solution">
+        “I really like how it is an all-in-one solution that handle many of 
+        the tasks that you would normally need separate tools to do the same 
+        job. This thing is a miracle worker.”
+      </p>
+    </div>
+    
+    <div class="sign-out">
+      <div class="CEO">JEREMY ROBINSON</div>
+      <div class="CMO">CMO, FYLO</div>
+    </div>
     
     <div class="curve-2">
       <img src="pattern-curved-line-2.svg" alt="pattern-curved-line-2">
@@ -347,8 +347,8 @@ h2{
   position: absolute;
   width: 299px;
   height: 56px;
-  left: 634px;
-  top: 40px;
+  left: 801px;
+  top: 1060px;
   font-family: 'Epilogue';
   font-style: normal;
   font-weight: 400;
@@ -362,8 +362,8 @@ h2{
   position: absolute;
   width: 350px;
   height: 175px;
-  left: 634px;
-  top: 165px;
+  left: 801px;
+  top: 1156px;
   bottom: 26.56%;
   font-family: 'Epilogue';
   font-style: normal;
@@ -378,8 +378,8 @@ h2{
   position: absolute;
   width: 165px;
   height: 32px;
-  left: 634px;
-  top: 399px;
+  left: 801px;
+  top: 1371px;
   font-family: 'Epilogue';
   font-style: normal;
   font-weight: 700;
@@ -393,8 +393,8 @@ h2{
   position: absolute;
   width: 165px;
   height: 32px;
-  left: 634px;
-  top: 431px;
+  left: 801px;
+  top: 1403px;
   font-family: 'Epilogue';
   font-style: normal;
   font-weight: 400;
@@ -494,7 +494,7 @@ h2{
 @media (max-width: 768px) {
   .main{
     position: relative;
-    width: 768px;
+    max-width: 768px;
     height: 1962px;
     background: #FAF8F6;
     overflow: hidden;
@@ -731,8 +731,8 @@ h2{
     position: absolute;
     width: 573px;
     height: 48px;
-    left: 58px;
-    top: 338px;
+    left: 97px;
+    top: 1440px;
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
@@ -746,8 +746,8 @@ h2{
   .solution{
     position: absolute;
     width: 573px;
-    left: 58px;
-    top: 426px;
+    left: 97px;
+    top: 1528px;
     bottom: 34.75%;
     font-family: 'Epilogue';
     font-style: normal;
@@ -763,8 +763,8 @@ h2{
     position: absolute;
     width: 165px;
     height: 32px;
-    left: 263px;
-    top: 562px;
+    left: 302px;
+    top: 1664px;
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 700;
@@ -779,8 +779,8 @@ h2{
     position: absolute;
     width: 190px;
     height: 26px;
-    left: 250px;
-    top: 594px;
+    left: 289px;
+    top: 1696px;
     bottom: 0%;
     font-family: 'Epilogue';
     font-style: normal;
@@ -863,11 +863,12 @@ h2{
 
 
 /*media query for mobile mode*/
-@media (max-width: 375px) {
+@media (max-width: 573px) {
   .main{
     position: relative;
     width: 375px;
     height: 2389px;
+    overflow: hidden;
     background: #FAF8F6;
     font-family: 'Epilogue';
     font-style: normal;
@@ -889,7 +890,9 @@ h2{
 
   .request-button--top{
     position: absolute;
-    left: 150px;
+    width: 182px;
+    height: 48px;
+    left: 177px;
     top: 24px;
     border: 1px solid #172339;
     border-radius: 6px;
@@ -915,7 +918,7 @@ h2{
     width: 343px;
     height: 89px;
     left: 16px;
-    top: 155.32px;
+    top: 125px;
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 700;
@@ -930,7 +933,7 @@ h2{
     width: 343px;
     height: 84px;
     left: 16px;
-    top: 276px;
+    top: 250px;
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
@@ -1084,7 +1087,6 @@ h2{
     width: 375px;
     height: 748px;
     left: 0px;
-    right: 0px;
     top: 1355px;
     background: #172339;
     border-radius: 15px;
@@ -1101,8 +1103,9 @@ h2{
   h2{
     position: absolute;
     height: 48px;
-    left: 0%;
-    right: 0%;
+    width: 375px;
+    height: 48px;
+    left: 0px;
     top: 1693px;
     font-family: 'Epilogue';
     font-style: normal;
@@ -1110,7 +1113,7 @@ h2{
     font-size: 40px;
     line-height: 48px;
     text-align: center;
-    letter-spacing: -0.416667px;
+    letter-spacing: -0.42px;
     color: #FAF8F6;
   }
 
@@ -1119,6 +1122,7 @@ h2{
     width: 343px;
     height: 160px;
     left: 16px;
+    right: 16px;
     top: 1781px;
     bottom: 17.44%;
     font-family: 'Epilogue';
@@ -1166,7 +1170,7 @@ h2{
 
   .footer-rectangle{
     position: absolute;
-    width: 377px;
+    width: 375px;
     height: 420px;
     left: 0px;
     top: 1969px;
