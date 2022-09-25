@@ -101,7 +101,7 @@
 <style>
 .main{
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
   height: 1716px;
   background: #FAF8F6;
   overflow: hidden;
@@ -144,6 +144,7 @@
 .request-button--top:hover{
   background-color: #172339;
   color: #FAF8F6;
+  border-width: 0px;
 }
 
 .curve-1{
@@ -206,10 +207,12 @@ h1{
   font-size: 18px;
   line-height: 32px;
   color: #FAF8F6;
+  border-width: 0px;
 }
 
 .request-button--down:hover{
   background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+  border-width: 0px;
 }
 
 .two-thousand{
@@ -488,10 +491,10 @@ h2{
 
 
 /*media query for tablet mode*/
-@media (width: 768px) {
+@media (max-width: 768px) {
   .main{
     position: relative;
-    width: 768px;
+    max-width: 768px;
     height: 1962px;
     background: #FAF8F6;
     overflow: hidden;
@@ -510,7 +513,7 @@ h2{
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: -0.444444px;
+    letter-spacing: -0.44px;
     color: #172339;
 }
 
@@ -531,7 +534,7 @@ h2{
 
   .curve-1{
     position: absolute;
-    width: 231.19px;
+    width: 231px;
     height: 29px;
     left: 262px;
     top: 219px;
@@ -856,6 +859,61 @@ h2{
     top: 18.75%;
   }
 
+
+
+
+@media (max-width: 375px) {
+  .main{
+    position: relative;
+    width: 375px;
+    height: 2389px;
+    background: #FAF8F6;
+    overflow: hidden;
+    font-family: 'Epilogue';
+    font-style: normal;
+  }
+
+  .suite--top{
+    position: absolute;
+    height: 32px;
+    left: 16px;
+    top: 32px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    color: #172339;
+  }
+
+  .request-button--top{
+    position: absolute;
+    left: 150px;
+    top: 24px;
+    border: 1px solid #172339;
+    border-radius: 6px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    color: #172339;
+  }
+
+  .curve-1{
+    position: absolute;
+    width: 151px;
+    height: 19px;
+    left: 170px;
+    top: 128px;
+  }
+
+
+
+
+}
 
 
 
