@@ -10,7 +10,7 @@
   
   <title>Frontend Mentor | Suite landing page</title>
 </head>
-<body>
+<body class="container">
   <main class="main">
     <section>
       <div class="request-beta-access--top">
@@ -99,9 +99,14 @@
 </html>
 
 <style>
+.container{
+    margin: 0;
+    padding: 0;
+}
+
 .main{
   position: relative;
-  max-width: 1456px;
+  max-width: 1440px;
   height: 1716px;
   background: #FAF8F6;
   overflow: hidden;
@@ -491,7 +496,12 @@ h2{
 
 
 /*media query for tablet mode*/
-@media (max-width: 784px) {
+@media (max-width: 768px) {
+  .container{
+    margin: 0;
+    padding: 0;
+  }
+
   .main{
     position: relative;
     max-width: 768px;
@@ -500,7 +510,6 @@ h2{
     overflow: hidden;
     font-family: 'Epilogue';
     font-style: normal;
-    margin: auto;
   }
 
   .suite--top{
@@ -865,15 +874,19 @@ h2{
 
 /*media query for mobile mode*/
 @media (max-width: 573px) {
+  .container{
+    margin: 0;
+    padding: 0;
+  }
+
   .main{
     position: relative;
-    max-width: 391px;
+    max-width: 375px;
     height: 2389px;
     overflow: hidden;
     background: #FAF8F6;
     font-family: 'Epilogue';
     font-style: normal;
-    margin: auto;
   }
 
   .suite--top{
